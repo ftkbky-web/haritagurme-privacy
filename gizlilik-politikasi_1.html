@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HaritaGurme Gizlilik Politikası</title>
+<style>
+  :root { --fg:#1d2330; --muted:#5b6474; --bg:#ffffff; --accent:#0b6e4f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --fg:#e8ecf3; --muted:#a4adbd; --bg:#12161d; --accent:#4fd1a5; }
+  }
+  :root[data-theme="dark"] { --fg:#e8ecf3; --muted:#a4adbd; --bg:#12161d; --accent:#4fd1a5; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; color:var(--accent); }
+  p, li { color:var(--fg); }
+  ul { padding-left:20px; }
+  .muted { color:var(--muted); font-size:.95rem; }
+  .en { border-top:1px solid rgba(127,127,127,.3); margin-top:48px; padding-top:24px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>HaritaGurme Gizlilik Politikası</h1>
+<p class="muted">Yürürlük tarihi: 5 Kasım 2026</p>
+
+<p>Bu politika HaritaGurme'nin Android uygulaması için geçerlidir. Geliştirici: Bahri Kerim Yılmaz. İletişim: Mappers1773@gmail.com.</p>
+
+<p><strong>Kısaca:</strong> HaritaGurme hesap açmanızı istemez, reklam ve analitik araçları içermez, sizi izlemez. Bilgileriniz telefonunuzda saklanır; bizim bir sunucumuza gönderilmez. Yalnızca bir yönetici sunucusu adresi girerseniz, işletme başvurusu ve öneriler o adrese gönderilir. Rota ve harita hizmetleri için gereken konum bilgisi, aşağıda adı geçen servislere yalnızca siz bu özellikleri kullandığınızda gönderilir.</p>
+
+<h2>1. Konum bilgisi</h2>
+<p>Uygulama, izin verirseniz telefonunuzun hassas konumunu (GPS) kullanır: haritayı bulunduğunuz yere ortalamak, yakındaki yerleri göstermek, "Güncel konumum"dan rota oluşturmak, en yakın hastane ve eczaneyi bulmak ve adım adım navigasyon için. Navigasyon sürerken ekran kilitli olsa da konum kullanılmaya devam eder; navigasyon bitince durur. Konum geçmişiniz kaydedilmez.</p>
+<p>Konumunuz yalnızca şu durumlarda telefondan dışarı çıkar:</p>
+<ul>
+  <li>Rota oluşturduğunuzda: başlangıç, durak ve varış koordinatları rota servisine gönderilir (araba: router.project-osrm.org, yaya: routing.openstreetmap.de; ayarlarda kendi rota sunucunuzu girdiyseniz o sunucu).</li>
+  <li>"Yolculukta yakındaki yerleri internetten yükle" açıkken: yaklaşık konumunuz, çevredeki yerleri bulmak için OpenStreetMap Overpass servislerine (overpass-api.de, overpass.kumi.systems) gönderilir.</li>
+  <li>Haritayı gezdiğinizde: görüntülenen bölgenin harita görselleri tile.openstreetmap.org'dan indirilir; bu sunucu hangi bölgeye baktığınızı ve IP adresinizi görür. Bölgedeki yerler için harita merkezinin koordinatları Overpass servislerine gönderilebilir.</li>
+  <li>Canlı trafik (isteğe bağlı): kendi TomTom API anahtarınızı girip trafiğe göre rota isterseniz rota koordinatları TomTom'a gönderilir.</li>
+</ul>
+<p>Bu servisler HaritaGurme'ye ait değildir ve kendi gizlilik kurallarına tabidir: OpenStreetMap Vakfı gizlilik politikası, FOSSGIS rota servisi, TomTom gizlilik bildirimi. Konum iznini telefon ayarlarından istediğiniz zaman kapatabilirsiniz; bu durumda rotayı il ve ilçe seçerek oluşturabilirsiniz.</p>
+
+<h2>2. Uygulamaya girdiğiniz bilgiler</h2>
+<p>Tercihleriniz (sevdiğiniz ve istemediğiniz yemekler, bütçe), eklediğiniz duraklar, çevrimdışı paketler, dil seçimi, önerdiğiniz yerler ve işletme başvurunuzdaki bilgiler (işletme adı, yetkili adı, telefon ya da e-posta) yalnızca telefonunuzda saklanır. Uygulama ayarlarında bir yönetici sunucu adresi tanımlanmamışsa bu bilgiler hiçbir sunucuya gönderilmez. Tanımlıysa, öneriler ve işletme başvuruları yalnızca o adrese HTTPS üzerinden gönderilir. Yönetici parolası, telefonda okunamaz biçimde (özet olarak) saklanır.</p>
+
+<h2>3. İzinler</h2>
+<ul>
+  <li>Konum: yukarıda anlatılan özellikler için.</li>
+  <li>Ön plan hizmeti (konum): navigasyonun ekran kilitliyken de sürmesi için; yalnızca navigasyon sırasında çalışır.</li>
+  <li>Bildirimler: navigasyon sürerken bunu gösteren bildirim için.</li>
+  <li>İnternet: harita, rota ve yer bilgilerini indirmek için.</li>
+</ul>
+
+<h2>4. Saklama ve silme</h2>
+<p>Verileriniz telefonunuzda kalır; biz saklamayız. Hepsini silmek için uygulamayı kaldırabilir ya da Ayarlar → Uygulamalar → HaritaGurme → Depolama → Verileri temizle yolunu kullanabilirsiniz. Harita önbelleği uygulama içinden de (Profil ve ayarlar → İnternetsiz kullanım) silinebilir.</p>
+
+<h2>5. Güvenlik</h2>
+<p>Uygulamanın kullandığı tüm bağlantılar şifrelidir (HTTPS).</p>
+
+<h2>6. Çocuklar</h2>
+<p>HaritaGurme 13 yaşı altındaki çocuklara yönelik değildir ve bilerek çocuklardan bilgi toplamaz.</p>
+
+<h2>7. Haklarınız ve iletişim</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki sorularınız ve talepleriniz için Mappers1773@gmail.com adresine yazın.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Bu politika değişirse güncel metin bu sayfada yayınlanır ve yürürlük tarihi güncellenir.</p>
+
+<section class="en">
+<h1>HaritaGurme Privacy Policy</h1>
+<p class="muted">Effective date: 5 November 2026</p>
+
+<p>This policy applies to the HaritaGurme Android app. Developer: Bahri Kerim Yılmaz. Contact: Mappers1773@gmail.com.</p>
+
+<p>HaritaGurme needs no account and contains no ads, analytics or tracking. Your preferences, stops, offline packs, suggestions and business claims stay on your device and are never sent to our servers. If you enter an admin server address in the app's advanced settings, suggestions and business claims are sent to that address only.</p>
+
+<p>Precise location is used on the device for the map, nearby places and navigation, and continues while navigation runs with the screen locked. Location leaves the device only when you use a feature that needs it: route coordinates go to the routing service (router.project-osrm.org, routing.openstreetmap.de or your own server), your approximate location goes to OpenStreetMap Overpass when "load nearby places online" is on, map tiles come from tile.openstreetmap.org, and route coordinates go to TomTom only if you add your own TomTom key.</p>
+
+<p>Uninstall the app or clear its data to delete everything. Contact: Mappers1773@gmail.com.</p>
+</section>
+
+</main>
+</body>
+</html>
